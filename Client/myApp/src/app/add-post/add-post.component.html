@@ -1,0 +1,18 @@
+<div class="add-post">
+  <h2>Add New Post</h2>
+  <div class="img-wrapper">
+    <img src="../../assets/post.png" alt="post-img" />
+  </div>
+  <div class="primary-wrapper">
+    <label> Title</label>
+    <input type="text" #title name="title" />
+    <label> Body</label>
+    <input type="text" #body name="body" />
+  </div>
+  <div class="buttons-wrapper">
+    <button class="add-btn" (click)="addPost(title.value, body.value)">
+      Add
+    </button>
+    <button (click)="backToPosts()">Cancel</button>
+  </div>
+</div>

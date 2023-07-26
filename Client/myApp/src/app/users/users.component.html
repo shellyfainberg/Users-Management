@@ -1,0 +1,21 @@
+<div class="users-wrapper">
+  <div class="search-div">
+    <label> Search by Name : </label>
+
+    <input
+      class="search"
+      #search
+      (keyup)="searchUser(search.value)"
+      type="text"
+    />
+    <button (click)="addNewUser()">Add new User</button>
+  </div>
+  <div style="width: 50%; float: left">
+    <app-user *ngFor="let u of searchedUsers" [user]="u"></app-user>
+  </div>
+
+  <div style="width: 50%; float: right">
+    <app-add-user *ngIf="showAddUser" ></app-add-user>
+    <router-outlet *ngIf="!showAddUser"></router-outlet>
+  </div>
+</div>

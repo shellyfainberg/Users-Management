@@ -1,0 +1,45 @@
+* {
+  font-family: "Poppins", "acumin-pro", "Acumin Pro", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+button {
+  background-color: #0057ff;
+  border: unset;
+  border-radius: 18px;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 20px;
+  border: none;
+  outline: 0;
+  background-color: #f3f3f3;
+}
+.primary-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5px;
+  width: 250px;
+  label {
+    padding: 5px;
+    text-align: center;
+  }
+  a {
+    padding: 5px;
+    text-align: center;
+  }
+}
+.additionaly-padding {
+  padding-left: 40px;
+}
+.additionaly-margin {
+  margin-left: 40px;
+}

@@ -1,0 +1,12 @@
+  <div class="add-task">
+    <h2>Add New Todo</h2>
+    <div class="img-wrapper">
+      <img src="../../assets/task.png" alt="task-img" />
+    </div>
+    <label> Title</label>
+    <input type="text" #title name="title" />
+    <div class="buttons-wrapper">
+      <button class="add-btn" (click)="addTask(title.value)">Add</button>
+      <button (click)="backToTask()">Cancel</button>
+    </div>
+  </div>

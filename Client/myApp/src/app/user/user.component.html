@@ -1,0 +1,46 @@
+<div
+  class="user-wrapper"
+  [class.completed]="userTasksCompleted"
+  [ngStyle]="isSelected ? { 'background-color': '#b0b0b0' } : {}"
+>
+  <div class="primary-wrapper">
+    <a [routerLink]="['/user', user._id]" (click)="coloredSelectedUser()">
+      <label>ID: </label>
+    </a>
+    <label>{{ user._id }}</label>
+    <label> Name</label>
+    <input [(ngModel)]="user.name" type="text" #name name="name" />
+    <label> Email</label>
+    <input [(ngModel)]="user.email" type="text" #email name="email" />
+  </div>
+
+  <div class="second-user-wrapper">
+    <div class="otherData" *ngIf="showData">
+      <label> Street</label>
+      <input [(ngModel)]="user.street" type="text" #street name="street" />
+      <label> City</label>
+      <input [(ngModel)]="user.city" type="text" #city name="city" />
+      <label> Zip Code</label>
+      <input [(ngModel)]="user.zipcode" type="text" #zipcode name="zipcode" />
+    </div>
+
+    <div class="buttons-wrapper">
+      <button
+        class="otherBtn"
+        (mouseenter)="showData = true"
+        (click)="showData = false"
+      >
+        More Details
+      </button>
+      <div class="inner">
+        <button
+          class="update"
+          (click)="updateUser(name.value, email.value)"
+        >
+          Update
+        </button>
+        <button (click)="deleteUser()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

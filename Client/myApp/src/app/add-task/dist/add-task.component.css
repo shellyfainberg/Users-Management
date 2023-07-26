@@ -1,0 +1,20 @@
+.add-task {
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 20px;
+}
+.add-task input {
+  margin: 5px;
+}
+.add-task .img-wrapper {
+  text-align: end;
+}
+.add-task .img-wrapper img {
+  width: 60px;
+}
+.add-task .buttons-wrapper {
+  text-align: end;
+}
+.add-task .buttons-wrapper .add-btn {
+  margin-right: 8px;
+}

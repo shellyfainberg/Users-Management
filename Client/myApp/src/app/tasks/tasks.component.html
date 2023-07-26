@@ -1,0 +1,12 @@
+<h3 class="additionaly-padding">Tasks - User {{ userId }}</h3>
+
+<ul *ngFor="let task of tasks">
+  <li><label> Title: </label> {{ task.title }}</li>
+  <li><label>Completed: </label>{{ task.completed }}</li>
+  <button *ngIf="!task.completed" (click)="markCompleted(task._id)">
+    Mark Completed
+  </button>
+</ul>
+<button class="additionaly-margin" (click)="switchToAdd()">Add Task</button>
+
+<router-outlet></router-outlet>

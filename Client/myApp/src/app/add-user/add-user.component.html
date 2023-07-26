@@ -1,0 +1,21 @@
+<div class="add-user">
+  <h2>Add New User</h2>
+  <div class="img-wrapper">
+    <img src="../../assets/user.png" alt="user-img" />
+  </div>
+  <div class="add-user-inner">
+    <label> Name</label>
+    <input type="text" #name name="name" />
+    <label> Email</label>
+    <input type="text" #email name="email" />
+  </div>
+  <div class="buttons-wrapper">
+    <button class="add-button" (click)="addNewUser(name.value, email.value)">
+      Add
+    </button>
+  </div>
+</div>
+
+
+
+

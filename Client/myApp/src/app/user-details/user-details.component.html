@@ -1,0 +1,14 @@
+<div class="userDetails-wrapper">
+
+  <app-add-task
+    *ngIf="showAddTask"
+    (notify)="showAddTask = $event"
+  ></app-add-task>
+
+  <app-tasks *ngIf="!showAddTask" (notify)="showAddTask = $event"></app-tasks>
+  <app-posts *ngIf="!showAddPost" (notify)="showAddPost = $event"></app-posts>
+  
+  <app-add-post *ngIf="showAddPost" (notify)="showAddPost = $event">
+  </app-add-post>
+
+</div>

@@ -1,0 +1,13 @@
+.users-wrapper {
+  padding: 10px;
+  overflow: hidden;
+}
+.users-wrapper .search-div {
+  padding-left: 30px;
+}
+.users-wrapper .search-div .search {
+  background-color: rgba(188, 197, 252, 0.64);
+}
+.users-wrapper button {
+  margin-left: 20px;
+}
