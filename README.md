@@ -32,6 +32,23 @@ Postman:
 Example: send GET to http://localhost:8000/user
 
 
+# HOW TO RUN:
+
+### run Node.js dev server (in different shell)
+> cd Server
+> node Server
+
+### run Angular dev server (in different shell)
+> cd my-app/Client
+> ng serve
+
+ # DB - mongo 
+
+open angular app in web:
+http://localhost:4200/
+
+
+
 
 
 
